@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Resulti by Forjed",
+    "version": "1.1",
+    "description": ".",
+    "permissions": [ "activeTab" ],
+    "browser_action": {
+        "default_title": "resulti",
+        "default_popup": "popup.html",
+        "default_width": 100,
+        "default_height": 100
+
+    },
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "encoding": "UTF-8",
+            "favicon_url": "icon.png",
+            "is_default": true,
+            "keyword": "resulti.net",
+            "name": "Resulti",
+            "search_url": "https://resulti.net/search?q={searchTerms}"
+
+        }
+    },
+    "chrome_url_overrides": {
+        "newtab": "homepage.html"
+    }
+}   
